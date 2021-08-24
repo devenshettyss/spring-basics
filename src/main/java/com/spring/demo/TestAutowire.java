@@ -5,9 +5,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class TestAutowire {
    public static void main(String[] args) {
-   ApplicationContext context = new ClassPathXmlApplicationContext(new String[] { "application-context.xml" });
+	ApplicationContext context = new ClassPathXmlApplicationContext(new String[] { "application-context.xml" });
 
-	EmployeeBean employee = (EmployeeBean) context.getBean("employee");
+
+//	EmployeeBean employee = (EmployeeBean) context.getBean("employee");
+	EmployeeBean employee = (EmployeeBean) context.getBean(EmployeeBean.class);
 
 	System.out.println(employee.getFullName());
 
