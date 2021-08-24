@@ -1,21 +1,23 @@
 package com.spring.demo;
 
 public class EmployeeBean {
-	private String fulName;
-	private DepartmentBean departmentBean;
-	public String getFulName() {
-		return fulName;
-	}
-	public void setFulName(String fulName) {
-		this.fulName = fulName;
-	}
+	private String fullName;
+
+	private DepartmentBean departmentBean;// = new DepartmentBean(); //don't create yourself
+
 	public DepartmentBean getDepartmentBean() {
 		return departmentBean;
 	}
+
 	public void setDepartmentBean(DepartmentBean departmentBean) {
 		this.departmentBean = departmentBean;
 	}
-	
-	
 
+	public String getFullName() {
+		return fullName;
+	}
+
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
+	}
 }

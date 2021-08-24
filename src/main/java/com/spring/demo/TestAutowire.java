@@ -9,7 +9,7 @@ public class TestAutowire {
 
 	EmployeeBean employee = (EmployeeBean) context.getBean("employee");
 
-	System.out.println(employee.getFulName());
+	System.out.println(employee.getFullName());
 
 	System.out.println(employee.getDepartmentBean().getName());
 }
